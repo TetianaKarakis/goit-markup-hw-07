@@ -290,12 +290,16 @@ img {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
 }
 
-.container-hero {
-     padding-top: 188px;
-    padding-bottom: 188px;
 
+@media (min-width: 1199px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px; 
+    }
 }
 
 .bg-img-main {
@@ -307,7 +311,15 @@ img {
     background-size: cover;
     background-position: center;
 }
-
+@media (min-device-pixel-ratio:2),
+(min-resolution: 192dpi){
+.hero {
+       background-image: linear-gradient(to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)) ,
+    url("../images/heroimage@2x.jpg");
+   }
+}
 
 .btn {
     text-align: center;
@@ -441,7 +453,7 @@ img {
 
 
 .do {
-  padding-bottom: 120px;
+   padding-bottom: 120px;
 }
 
 .do .list {
@@ -460,6 +472,7 @@ img {
 @media (min-width: 1158px) {
     .section.do {
         display: flex;
+        
     }
 }
 
@@ -517,6 +530,7 @@ img {
 .social-list{
     display: flex;
     gap: 24px;
+    justify-content: center;
   
 }
 
